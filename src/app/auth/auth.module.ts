@@ -6,6 +6,8 @@ import { ForgetpassComponent } from './forgetpass/forgetpass.component';
 import { SuccessComponent } from './success/success.component';
 import { DeniedComponent } from './denied/denied.component';
 import { DynamicmsgComponent } from './dynamicmsg/dynamicmsg.component';
+import { FormsModule } from '@angular/forms';
+import { NgbButtonLabel } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -19,7 +21,8 @@ import { DynamicmsgComponent } from './dynamicmsg/dynamicmsg.component';
     DynamicmsgComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports:[
     LoginComponent,

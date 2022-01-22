@@ -13,6 +13,8 @@ import { ContentComponent } from './content/content.component';
 import { BlogComponent } from './blog/blog.component';
 import { DefaultComponent } from './default/default.component';
 
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -29,9 +31,11 @@ import { DefaultComponent } from './default/default.component';
     ContentComponent,
     BlogComponent,
     DefaultComponent
+ 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     HeaderComponent,
@@ -46,6 +50,7 @@ import { DefaultComponent } from './default/default.component';
     BlogComponent,
     ContentComponent,
     DefaultComponent
+  
   ]
 })
 export class TemplateModule { }
