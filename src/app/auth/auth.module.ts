@@ -20,6 +20,14 @@ import { DynamicmsgComponent } from './dynamicmsg/dynamicmsg.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    LoginComponent,
+    SignupComponent,
+    ForgetpassComponent,
+    SuccessComponent,
+    DeniedComponent,
+    DynamicmsgComponent
   ]
 })
 export class AuthModule { }
