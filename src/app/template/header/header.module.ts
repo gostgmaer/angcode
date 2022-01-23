@@ -37,6 +37,6 @@ import { UserSkalitonComponent } from './user-skaliton/user-skaliton.component';
     HumbergurComponent,
     UserIconComponent,
     UserSkalitonComponent
-  ]
+  ],
 })
 export class HeaderModule { }

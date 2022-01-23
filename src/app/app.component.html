@@ -1,6 +1,16 @@
-<div class="container">
+<app-headers></app-headers>
+
+<div class="m-5"></div>
+
+<!---Change Element From below div Section-->
+
+<div class="container-fluid">
+
+
+
+<div class="container text-center">
   <h1>This is a header</h1>
-  <button type="button" (click)="getdata('Hello')" id="" class="btn btn-primary  btn-block">
+  <button type="button" (click)="getdata('Hello')" id="" class="btn btn-primary">
     Button Click
   </button>
 
@@ -129,7 +139,7 @@
 <section class="m-5">
   <div class="container text-center ">
     <h2>{{switchtitle}}</h2>
-    <div [ngSwitch]="dcolor" >
+    <div [ngSwitch]="dcolor">
       <h3 *ngSwitchCase="'white'" class="text-light bg-dark">White Color</h3>
       <h3 *ngSwitchCase="'black'" class="text-light bg-dark">Black Color</h3>
       <h3 *ngSwitchCase="'red'" class="text-light bg-dark">Red Color</h3>
@@ -156,7 +166,7 @@
   <div class="container text-center ">
     <h2>This is Example for Angular Loop</h2>
     <div>
-      <h3 *ngFor="let item of usr"> Name is:  {{item}}
+      <h3 *ngFor="let item of usr"> Name is: {{item}}
 
 
 
@@ -164,7 +174,8 @@
 
       </h3>
       <div>
-        <h4 *ngFor="let items of usrd"> {{items.id}} --- {{items.first_name}} --- {{items.last_name}} --- {{items.email}} --- {{items.ip_address}} </h4>
+        <h4 *ngFor="let items of usrd"> {{items.id}} --- {{items.first_name}} --- {{items.last_name}} ---
+          {{items.email}} --- {{items.ip_address}} </h4>
       </div>
     </div>
   </div>
@@ -174,8 +185,9 @@
   <div class="container text-center ">
     <h2>This is Example for {{nastedtitle}}</h2>
     <div>
-      <h3 *ngFor="let item of usr"> Name is:  {{item}}
-        <h4 *ngFor="let items of nasted"> {{items.id}} --- {{items.city}} --- {{items.lat}} --- {{items.long}} --- {{items.phone}} </h4>
+      <h3 *ngFor="let item of usr"> Name is: {{item}}
+        <h4 *ngFor="let items of nasted"> {{items.id}} --- {{items.city}} --- {{items.lat}} --- {{items.long}} ---
+          {{items.phone}} </h4>
       </h3>
       <div>
 
@@ -185,14 +197,43 @@
 </section>
 
 
+<div class="container">
+  <form class="form-signin">
+    <div class="text-center mb-4">
+      <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
+      <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
+    </div>
+
+    <div class="form-label-group">
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputEmail">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <label for="inputPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+  </form>
+</div>
+
 
 
 <section class="m-5">
   <div class="container text-center ">
-    <h2 [style.color]="colorg" [style.backgroundColor]="bgcolor" >This is {{stylebunind}} </h2>
+    <h2 [style.color]="colorg" [style.backgroundColor]="bgcolor">This is {{stylebunind}} </h2>
     <div class="m-2">
       <h3 [style.color]="colora" [style.backgroundColor]="bdcolor">
-        This is  A Color Property Buinding
+        This is A Color Property Buinding
+
       </h3>
       <button (click)="updatecolor()" class="btn btn-success" type="button">Update Colors</button>
 
@@ -201,6 +242,7 @@
 </section>
 
 
+<app-footers></app-footers>
 
 
 
@@ -215,9 +257,7 @@
 
 
 
-
-
-
+</div>
 
 
 
