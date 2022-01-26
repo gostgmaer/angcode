@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-prac1',
+  templateUrl: './prac1.component.html',
+  styleUrls: ['./prac1.component.css']
 })
-export class AppComponent {
+export class Prac1Component implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
   title: string = 'KISHOR SARKAR';
   displayval: string = '';
   getdata(val: string) {
@@ -166,4 +170,5 @@ export class AppComponent {
     console.warn(data);
     this.userdata=data;
   }
+
 }

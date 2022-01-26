@@ -1,0 +1,17 @@
+<div class="container text-center">
+  <h2>{{prac2title}}</h2>
+  <section>
+    <div class="form-group m-2">
+
+      <input id="my-input" class="form-control m-2" type="text" #task name="task" placeholder="Enter Your Task Name"> <br>
+      <br>
+      <button (click)="addTask(task.value)" class="btn btn-primary m-2" #subbtn>Add Task</button>
+    </div>
+    <ul  class="list-unstyled" *ngFor="let item of todolist">
+      <li>{{item.name}}</li> <button (click)="removeTask(item.id)" class="btn btn-danger" >Remove</button>
+    </ul>
+
+
+  </section>
+</div>
+
