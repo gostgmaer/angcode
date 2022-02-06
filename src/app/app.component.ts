@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  updatedata() {
+    this.data = Math.random();
+  }
   title: string = 'KISHOR SARKAR';
   displayval: string = '';
   getdata(val: string) {
@@ -161,9 +163,49 @@ export class AppComponent {
     this.colora = 'cyan';
     this.bdcolor = 'green';
   }
-  userdata:any={}
+  userdata: any = {};
   getDatafield(data: NgForm) {
     console.warn(data);
-    this.userdata=data;
+    this.userdata = data;
+  }
+  data = 10;
+  userdetails = [
+    {
+      id: 1,
+      first_name: 'Sutherland',
+      last_name: 'Pittock',
+      email: 'spittock0@soundcloud.com',
+      gender: 'Genderqueer',
+      ip_address: '66.232.221.15',
+    },
+    {
+      id: 2,
+      first_name: 'Brocky',
+      last_name: 'Slate',
+      email: 'bslate1@sun.com',
+      gender: 'Male',
+      ip_address: '67.131.85.110',
+    },
+    {
+      id: 3,
+      first_name: 'Nigel',
+      last_name: 'Houston',
+      email: 'nhouston2@psu.edu',
+      gender: 'Male',
+      ip_address: '61.12.233.245',
+    },
+    {
+      id: 4,
+      first_name: 'Edward',
+      last_name: 'Delve',
+      email: 'edelve3@chronoengine.com',
+      gender: 'Male',
+      ip_address: '72.206.55.94',
+    },
+  ];
+
+
+  dataUpdate(item:string){
+    console.warn(item)
   }
 }

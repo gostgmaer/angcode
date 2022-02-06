@@ -12,13 +12,19 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from "@angular/material/button";
 import {MatBadgeModule} from '@angular/material/badge';
 import { PractModule } from './pract/pract.module';
+import { ChildComponent } from './child/child.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { DataupdateComponent } from './dataupdate/dataupdate.component';
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildComponent,
+    UserdetailsComponent,
+    DataupdateComponent
   ],
   imports: [
     BrowserModule,
